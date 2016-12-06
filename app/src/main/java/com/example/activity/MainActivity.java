@@ -116,7 +116,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	}
 
 	/*
-	 * ��ʼ����Դ
+	 * trtrtrtrtrtrtrtrtrtrtr
 	 */
 	private void initViewPager() {
 
