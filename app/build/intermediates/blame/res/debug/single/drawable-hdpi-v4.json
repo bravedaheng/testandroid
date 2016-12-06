@@ -1,7 +1,15 @@
 [
     {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\c.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\c.jpg"
+    },
+    {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_senlingongyuan.jpg",
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\drawable-hdpi\\a_senlingongyuan.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_jinci.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a_jinci.jpg"
     },
     {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a.jpg",
@@ -24,16 +32,48 @@
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\drawable-hdpi\\d.jpg"
     },
     {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\e.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\e.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_mengshan.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a_mengshan.jpg"
+    },
+    {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_mengshan.jpg",
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\drawable-hdpi\\a_mengshan.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenheerku.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a_fenheerku.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a.jpg"
     },
     {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenhegongyuan.jpg",
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\drawable-hdpi\\a_fenhegongyuan.jpg"
     },
     {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\b.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\b.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenhegongyuan.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a_fenhegongyuan.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\d.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\d.jpg"
+    },
+    {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenheerku.jpg",
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\drawable-hdpi\\a_fenheerku.jpg"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_senlingongyuan.jpg",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\drawable-hdpi\\a_senlingongyuan.jpg"
     },
     {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\c.jpg",

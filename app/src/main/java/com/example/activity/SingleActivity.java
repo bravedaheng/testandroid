@@ -26,6 +26,8 @@ public class SingleActivity extends Activity implements OnClickListener {
 	public String mingcheng, jieshao, leixing, jijie, jianyi, menpiao, shijian,
 			dizhi;
 
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -85,7 +87,7 @@ public class SingleActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.single_content_xiangqing:
 			final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			// »ñµÃlayoutµÄÌî³äÆ÷
+			// ï¿½ï¿½ï¿½layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			// LayoutInflater inflater = this.getLayoutInflater();
 			// View view = inflater.inflate(R.layout.content_dialog, null);
 			// dialog.setView(view);
@@ -101,7 +103,7 @@ public class SingleActivity extends Activity implements OnClickListener {
 			// String xinxi = intent2.getStringExtra(ContanceKey.KEY_JIESHAO);
 			// textView.setText("\t\t" + xinxi);
 			builder.create();
-			// ÏÈ»ñµÃÒ»¸ödialog¶ÔÏó
+			// ï¿½È»ï¿½ï¿½Ò»ï¿½ï¿½dialogï¿½ï¿½ï¿½ï¿½
 			final AlertDialog dialog = builder.show();
 			dialog_close.setOnClickListener(new OnClickListener() {
 
@@ -122,7 +124,7 @@ public class SingleActivity extends Activity implements OnClickListener {
 			Intent intent = new Intent(SingleActivity.this, MainActivity.class);
 			startActivity(intent);
 			SingleActivity.this.finish();
-			// ÕâÀï²»ÐèÒªÖ´ÐÐ¸¸ÀàµÄµã»÷ÊÂ¼þ£¬ËùÒÔÖ±½Óreturn
+			// ï¿½ï¿½ï¿½ï²»ï¿½ï¿½ÒªÖ´ï¿½Ð¸ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½return
 			return true;
 		}
 		return super.onKeyDown(keyCode, event);
