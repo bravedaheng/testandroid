@@ -44,20 +44,21 @@ import android.widget.ImageView.ScaleType;
 public class MainActivity extends Activity implements OnClickListener,
 		OnItemClickListener {
 
-	// ´ò¿ªÊý¾Ý¿â
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½
 	// public SQLiteDatabase SQLITE = SQLiteDatabase.openOrCreateDatabase(
 	// "data/data/com.example.activity/files/jingdian_db", null);
 	private static final String TAG = "info";
-	private ViewPager viewPager; // android-support-v4ÖÐµÄ»¬¶¯×é¼þ
-	private List<ImageView> imageViews; // »¬¶¯µÄÍ¼Æ¬¼¯ºÏ
+	private ViewPager viewPager; // android-support-v4ï¿½ÐµÄ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private List<ImageView> imageViews; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
 
-	private String[] titles; // Í¼Æ¬±êÌâ
+	private String[] titles; // Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
 	private int[] imageResId; // Í¼Æ¬ID
-	private List<View> dots; // Í¼Æ¬±êÌâÕýÎÄµÄÄÇÐ©µã
+	private List<View> dots; // Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½Ð©ï¿½ï¿½
 	private TextView tv_title;
-	private int currentItem = 0; // µ±Ç°Í¼Æ¬µÄË÷ÒýºÅ
+	private int currentItem = 0; // ï¿½ï¿½Ç°Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	private EditText et_search; // ËÑË÷¿ò
+
+	private EditText et_search; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	// An ExecutorService that can schedule commands to run after a given delay,
 	// or to execute periodically.
@@ -71,7 +72,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	private Integer[] images = Image.images;
 	Person person;
 
-	private long exitTime = 0; // ·µ»Ø¼üÍÆ³öµÄÊ±¼ä
+	private long exitTime = 0; // ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½Æ³ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
 	Handler handler = new Handler() {
 		@Override
@@ -79,7 +80,7 @@ public class MainActivity extends Activity implements OnClickListener,
 			super.handleMessage(msg);
 			switch (msg.what) {
 			case 1:
-				// ÖØÐÂË¢ÐÂÊÊÅäÆ÷£¬²¢ÖØÐÂ²éÑ¯
+				// ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½Ñ¯
 				adapter.refresh(queryData());
 				break;
 			default:
@@ -91,31 +92,31 @@ public class MainActivity extends Activity implements OnClickListener,
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// ÉèÖÃÎªÎÞ±êÌâÀ¸
+		// ï¿½ï¿½ï¿½ï¿½Îªï¿½Þ±ï¿½ï¿½ï¿½ï¿½ï¿½
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main_activity);
 		Log.i(TAG, "11111");
-		initViewPager(); // ViewPagerµÄÏà¹ØÄÚÈÝ³õÊ¼»¯
-		initListView(); // ListViewµÄÏà¹ØÄÚÈÝ³õÊ¼»¯
+		initViewPager(); // ViewPagerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê¼ï¿½ï¿½
+		initListView(); // ListViewï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê¼ï¿½ï¿½
 		Log.i(TAG, "22222");
 
 	}
 
 	private void initListView() {
-		// »ñÈ¡ListView
+		// ï¿½ï¿½È¡ListView
 		listView = (ListView) findViewById(R.id.main_listview);
 		Log.i(TAG, "33333");
 		bookList = queryData();
 		Log.i(TAG, "44444");
 		// loadingImage(p);
-		// ÊµÀý»¯DbAdapter
+		// Êµï¿½ï¿½ï¿½ï¿½DbAdapter
 		adapter = new MyListViewDbAdapter(getApplication(), bookList, bitmap);
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(this);
 	}
 
 	/*
-	 * ³õÊ¼»¯×ÊÔ´
+	 * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ô´
 	 */
 	private void initViewPager() {
 
@@ -123,15 +124,15 @@ public class MainActivity extends Activity implements OnClickListener,
 				R.drawable.a_fenheerku, R.drawable.a_fenhegongyuan,
 				R.drawable.a_senlingongyuan };
 		titles = new String[imageResId.length];
-		titles[0] = "½úìô";
-		titles[1] = "ÃÉÉ½´ó·ð";
-		titles[2] = "·ÚºÓ¶þ¿â";
-		titles[3] = "·ÚºÓ¹«Ô°";
-		titles[4] = "É­ÁÖ¹«Ô°";
+		titles[0] = "ï¿½ï¿½ï¿½ï¿½";
+		titles[1] = "ï¿½ï¿½É½ï¿½ï¿½ï¿½";
+		titles[2] = "ï¿½ÚºÓ¶ï¿½ï¿½ï¿½";
+		titles[3] = "ï¿½ÚºÓ¹ï¿½Ô°";
+		titles[4] = "É­ï¿½Ö¹ï¿½Ô°";
 
 		imageViews = new ArrayList<ImageView>();
 
-		// ³õÊ¼»¯Í¼Æ¬×ÊÔ´
+		// ï¿½ï¿½Ê¼ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ô´
 		for (int i = 0; i < imageResId.length; i++) {
 			ImageView imageView = new ImageView(this);
 			imageView.setImageResource(imageResId[i]);
@@ -154,17 +155,17 @@ public class MainActivity extends Activity implements OnClickListener,
 
 		viewPager = (ViewPager) findViewById(R.id.vp);
 		viewPager.setAdapter(new MyViewPagerAdapter(this, imageViews,
-				imageResId));// ÉèÖÃÌî³äViewPagerÒ³ÃæµÄÊÊÅäÆ÷
-		// ÉèÖÃÒ»¸ö¼àÌýÆ÷£¬µ±ViewPagerÖÐµÄÒ³Ãæ¸Ä±äÊ±µ÷ÓÃ
+				imageResId));// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ViewPagerÒ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ViewPagerï¿½Ðµï¿½Ò³ï¿½ï¿½Ä±ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
 		viewPager.setOnPageChangeListener(new MyPageChangeListener(this,
 				titles, dots, tv_title, currentItem));
 
 	}
-
+  //fmsfskfskerererererer
 	@Override
 	protected void onStart() {
 		scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-		// µ±ActivityÏÔÊ¾³öÀ´ºó£¬Ã¿3ÃëÖÓÇÐ»»Ò»´ÎÍ¼Æ¬ÏÔÊ¾
+		// ï¿½ï¿½Activityï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿3ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½Ò»ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ê¾
 		scheduledExecutorService.scheduleAtFixedRate(new ViewPagerScrollTask(
 				this, viewPager, imageViews, currentItem), 1, 3,
 				TimeUnit.SECONDS);
@@ -173,17 +174,17 @@ public class MainActivity extends Activity implements OnClickListener,
 
 	@Override
 	protected void onStop() {
-		// µ±Activity²»¿É¼ûµÄÊ±ºòÍ£Ö¹ÇÐ»»
+		// ï¿½ï¿½Activityï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í£Ö¹ï¿½Ð»ï¿½
 		scheduledExecutorService.shutdown();
 		super.onStop();
 	}
 
-	// ²éÑ¯Êý¾Ý¿â£¬½«Ã¿Ò»ÐÐµÄÊý¾Ý·â×°³ÉÒ»¸öperson ¶ÔÏó£¬È»ºó½«¶ÔÏóÌí¼Óµ½ListÖÐ
+	// ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ý¿â£¬ï¿½ï¿½Ã¿Ò»ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý·ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½person ï¿½ï¿½ï¿½ï¿½È»ï¿½ó½«¶ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Listï¿½ï¿½
 	private List<Person> queryData() {
 		Log.i(TAG, "55555");
 		List<Person> list = new ArrayList<Person>();
 		Log.i(TAG, "66666");
-		// µ÷ÓÃquery()»ñÈ¡Cursor
+		// ï¿½ï¿½ï¿½ï¿½query()ï¿½ï¿½È¡Cursor
 		Log.i(TAG, "77777");
 		// Cursor c =Contance.SQLITE.query(Contance.IMPORT_DB_TABLENAME, null,
 		// null, null,
@@ -197,7 +198,7 @@ public class MainActivity extends Activity implements OnClickListener,
 			String mingcheng = c.getString(c.getColumnIndex("mingcheng"));
 			String jieshao = c.getString(c.getColumnIndex("jieshao"));
 			Log.i(TAG, "aaaaa");
-			// ÓÃÒ»¸öPerson¶ÔÏóÀ´·â×°²éÑ¯³öÀ´µÄÊý¾Ý
+			// ï¿½ï¿½Ò»ï¿½ï¿½Personï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			final Person p = new Person();
 			p.set_id(_id);
 			p.setMingcheng(mingcheng);
@@ -220,7 +221,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		case R.id.et_custom_title:
 			Intent intent = new Intent(MainActivity.this, SearchActivity.class);
 			startActivity(intent);
-			MainActivity.this.finish(); // ½áÊøµ±Ç°½çÃæ
+			MainActivity.this.finish(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
 			break;
 
 		default:
@@ -229,7 +230,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	}
 
 	/*
-	 * Ã¿Ò»¸öitemµÄµã»÷ÊÂ¼þ
+	 * Ã¿Ò»ï¿½ï¿½itemï¿½Äµï¿½ï¿½ï¿½Â¼ï¿½
 	 */
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -275,7 +276,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		if (keyCode == KeyEvent.KEYCODE_BACK
 				&& event.getAction() == KeyEvent.ACTION_DOWN) {
 			if ((System.currentTimeMillis() - exitTime) > 2000) {
-				Toast.makeText(getApplicationContext(), "ÔÙ°´Ò»´ÎÍË³ö³ÌÐò",
+				Toast.makeText(getApplicationContext(), "ï¿½Ù°ï¿½Ò»ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½",
 						Toast.LENGTH_SHORT).show();
 				exitTime = System.currentTimeMillis();
 			} else {
