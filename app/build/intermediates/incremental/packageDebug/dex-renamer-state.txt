@@ -1,0 +1,7 @@
+#Mon Oct 10 08:54:30 CST 2016
+base.0=D\:\\eqxiu2\\demo1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_4f91ecf660379ba52639ea65e750a4598393d7d8
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\eqxiu2\\demo1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5804aafb6720e79f158824ca864ae35f996d3472\\classes.dex
+base.1=D\:\\eqxiu2\\demo1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5804aafb6720e79f158824ca864ae35f996d3472
+file.0=D\:\\eqxiu2\\demo1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_4f91ecf660379ba52639ea65e750a4598393d7d8\\classes.dex

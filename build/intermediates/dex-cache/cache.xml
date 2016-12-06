@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\eqxiu2\demo1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eeba835c71b8bd2169b4a3669222ab1a28eb8124">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5804aafb6720e79f158824ca864ae35f996d3472\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\eqxiu2\demo1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_794e31a2eeff834434f9ee2107d758f7cba26d7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\eqxiu2\demo1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_fe3e7c17378a6169a7979cb41621f835576ba695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_2c7b3f93a4765de67fc456e30fee656c798d7e65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\eqxiu2\demo1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="137824bce831e1cb3cd780181d9ec6294ef6c95f">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4f91ecf660379ba52639ea65e750a4598393d7d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\eqxiu2\demo1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\eqxiu2\demo1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_6168c1346634e0ec0956cc6177158ffc60dc8d1b\classes.dex" />
+    </item>
+
+</items>

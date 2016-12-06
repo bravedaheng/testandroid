@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/single_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/nav_bg" >
+
+        <ImageButton
+            android:id="@+id/single_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/search_et_back" />
+
+        <TextView
+            android:id="@+id/single_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="景点"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/single_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/main_title_menu_icon" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/single_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/single_content_mingcheng_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_mingcheng_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点名称：" />
+
+            <TextView
+                android:id="@+id/single_content_mingcheng_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_mingcheng_title"
+                android:text="晋祠"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_jieshao_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_jieshao_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点介绍：" />
+
+            <TextView
+                android:id="@+id/single_content_jieshao_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/single_content_jieshao_title"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="  游览晋祠时，可以按照中、北、南三条线来参观。中路是从晋祠大门口到圣母殿，也为晋祠的主体；北路是从文昌官至吕祖阁，拥有很高的艺术价值。南路是从胜瀛楼至公输子祠，颇有江南园林的风格。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/single_content_xiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/single_content_jieshao_content"
+                android:layout_below="@+id/single_content_jieshao_content"
+                android:layout_marginRight="10dp "
+                android:clickable="true"
+                android:text="[详细信息]"
+                android:textColor="#0000FF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_leixing_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_leixing_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点类型：" />
+
+            <TextView
+                android:id="@+id/single_content_leixing_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_leixing_title"
+                android:text="宗教场所"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_jijie_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_jijie_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最佳季节：" />
+
+            <TextView
+                android:id="@+id/single_content_jijie_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_jijie_title"
+                android:text="四季皆宜。 春夏秋三季的晋祠可看山水和人文景观，冬天晋祠人少，微显荒凉，但历史感在此时最为浓重。"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_jianyi_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_jianyi_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议游玩：" />
+
+            <TextView
+                android:id="@+id/single_content_jianyi_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_jianyi_title"
+                android:text="3-4小时"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_menpiao_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_menpiao_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门票价格：" />
+
+            <TextView
+                android:id="@+id/single_content_menpiao_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_menpiao_title"
+                android:text="旺季（4月~10月）：70.00元 淡季（11月~3月）：60.00元"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_shijian_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_shijian_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开放时间：" />
+
+            <TextView
+                android:id="@+id/single_content_shijian_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_shijian_title"
+                android:text="旺季（4月~10月）：08:00~18:00 淡季（11月~3月）：08:30~17:00"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_content_dizhi_layout"
+            style="@style/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/single_content_dizhi_title"
+                style="@style/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点地址：" />
+
+            <TextView
+                android:id="@+id/single_content_dizhi_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/single_content_dizhi_title"
+                android:text="山西省太原市晋源区晋祠镇"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
