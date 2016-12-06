@@ -12,12 +12,12 @@
         "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\layout\\single_activity.xml"
     },
     {
-        "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\single_activity.xml",
         "source": "D:\\eqxiu2\\demo1\\app\\src\\main\\res\\layout\\single_activity.xml"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
@@ -44,12 +44,12 @@
         "source": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_title_main_activity.xml",
-        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\layout\\custom_title_main_activity.xml"
-    },
-    {
         "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.3\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\eqxiu2\\demo1\\testandroid\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_title_main_activity.xml",
+        "source": "D:\\eqxiu2\\demo1\\testandroid\\app\\src\\main\\res\\layout\\custom_title_main_activity.xml"
     },
     {
         "merged": "D:\\eqxiu2\\demo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
